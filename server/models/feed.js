@@ -61,9 +61,7 @@ module.exports = function(Feed) {
   });
 
   // Feed.remoteMethod('getFeeds', getFeedsConfig());
-  //
   // function getFeedsConfig() {
-  // //
   // // {
   // //   description: 'Get all feeds',
   // //   http: {path: '/feeds', verb: 'get'},
