@@ -100,7 +100,7 @@ module.exports = function(Feed) {
     var userId = token && token.userId;
     // console.log(userId);
     // feedJson['userId'] = userId;
-    console.log(feedJson);
+    // console.log(feedJson);
     // console.log(options.accessToken);
     // console.log(options.accessToken.userId);
     // cb(null, 'success');
@@ -119,7 +119,7 @@ module.exports = function(Feed) {
       cb(null, successResponse);
     })
     .catch(function(err) {
-      console.log(err);
+      // console.log(err);
       cb(err);
       // cb(resParser.errorResponse(
       //   appException.INTERNAL_SERVER_ERROR(), err.stack));
