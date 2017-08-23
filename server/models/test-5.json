@@ -1,0 +1,13 @@
+{
+  "name": "test-5",
+  "base": "Email",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,60 @@
+{
+  "name": "Feed",
+  "plural": "feeds",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "userId": {
+      "type": "string",
+      "required": true
+    },
+    "productId": {
+      "type": "string",
+      "required": true
+    },
+    "createdAt": {
+      "type": "date",
+      "required": true
+    },
+    "friendId": {
+      "type": "string",
+      "required": true
+    },
+    "productName": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW",
+      "property": [
+        "find",
+        "getFeeds",
+        "createFeeds"
+      ]
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW",
+      "property": "create"
+    }
+  ],
+  "methods": {}
+}

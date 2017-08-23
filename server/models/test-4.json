@@ -1,0 +1,13 @@
+{
+  "name": "test-4",
+  "base": "Checkpoint",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
