@@ -10,6 +10,8 @@ module.exports = function() {
     if (err && err.coreException && err.coreException.statusCode) {
       statusCode = err.coreException.statusCode;
     }
+    console.log('statusCode for error');
+    console.log(statusCode);
     if (!err.processingTimeMillis && !err.success && !err.data) {
       if (statusCode === 401) {
         err = resParser.errorResponse(appException.NOT_AUTHORIZED(), err);
