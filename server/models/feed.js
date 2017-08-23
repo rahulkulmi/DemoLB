@@ -120,8 +120,9 @@ module.exports = function(Feed) {
     })
     .catch(function(err) {
       console.log(err);
-      cb(resParser.errorResponse(
-        appException.INTERNAL_SERVER_ERROR(), err.stack));
+      cb(err);
+      // cb(resParser.errorResponse(
+      //   appException.INTERNAL_SERVER_ERROR(), err.stack));
     });
   };
   Feed.remoteMethod('createFeeds', {

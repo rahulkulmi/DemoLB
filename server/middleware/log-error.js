@@ -21,6 +21,6 @@ module.exports = function() {
       }
     }
     res.status(statusCode).send(err);
-    next(err);
+    // next(err);
   };
 };
