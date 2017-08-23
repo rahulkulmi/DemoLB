@@ -106,7 +106,6 @@ module.exports = function(Feed) {
     // cb(null, 'success');
     // var fl = {fields: {id: true, city: true, zip: true}};
     // Feed.findById(FeedId, fl, function(err, instance) {
-    //
     // Feed.create(feedJson, function(err, instance) {
     //   if (err) return cb(err);
     //   console.log(instance);
