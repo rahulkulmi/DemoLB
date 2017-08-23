@@ -119,7 +119,6 @@ module.exports = function(Feed) {
       cb(null, successResponse);
     })
     .catch(function(err) {
-      // console.log(err);
       cb(err);
       // cb(resParser.errorResponse(
       //   appException.INTERNAL_SERVER_ERROR(), err.stack));
