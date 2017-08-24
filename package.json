@@ -7,8 +7,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "start": "node ./node_modules/.bin/pm2 start server/server.js --name APP",
-    "poststart":  "node ./node_modules/.bin/pm2 logs",
+    "start": "node server/server.js --name APP",
     "posttest": "npm run lint && nsp check"
   },
   "dependencies": {
@@ -24,7 +23,6 @@
     "loopback-connector-mongodb": "^3.2.1",
     "loopback-connector-mysql": "^5.0.0",
     "morgan": "^1.8.2",
-    "pm2": "^2.6.1",
     "serve-favicon": "^2.4.3",
     "strong-error-handler": "^2.2.0",
     "winston": "^2.3.1"
