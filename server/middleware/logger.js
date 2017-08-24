@@ -1,8 +1,10 @@
 'use strict';
 var winston = require('winston');
+var fs = require('fs');
 var path = require('path');
 
 var logDirectory = path.join(__dirname, '../../logs');
+fs.existsSync(logDirectory) || fs.mkdirSync(logDirectory);
 winston.emitErrs = true;
 
 var logger = new winston.Logger({
