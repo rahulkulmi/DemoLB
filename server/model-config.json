@@ -14,7 +14,8 @@
     ]
   },
   "User": {
-    "dataSource": "mongoDB"
+    "dataSource": "mongoDB",
+    "public": false
   },
   "AccessToken": {
     "dataSource": "mongoDB",
@@ -65,7 +66,7 @@
     }
   },
   "XYZ": {
-    "dataSource": null,
+    "dataSource": "mongoDB",
     "public": true
   },
   "push": {
@@ -83,5 +84,31 @@
   "notification": {
     "dataSource": "mongoDB",
     "public": true
+  },
+  "AppUser": {
+    "dataSource": "mongoDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "login": true
+        }
+      }
+    }
+  },
+  "AppAdmin": {
+    "dataSource": "mongoDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "login": true,
+          "logout": true,
+          "create": true
+        }
+      }
+    }
   }
 }
