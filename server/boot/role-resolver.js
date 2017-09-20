@@ -10,19 +10,19 @@ module.exports = function(app) {
       console.log('%j', err);
       return err;
     }
-    console.log('res value');
-    console.log(adminRes);
+    // console.log('res value');
+    // console.log(adminRes);
 
     if (adminRes.length > 0) {
       Role.create({
         name: 'admin'
       }, function(err, role) {
         if (err) {
-          console.log('%j', err);
+          // console.log('%j', err);
           return err;
         }
-        console.log('Role');
-        console.log(role);
+        // console.log('Role');
+        // console.log(role);
 
         for (var i = 0; i < adminRes.length; i++) {
           // Make an admin
